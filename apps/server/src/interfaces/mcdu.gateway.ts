@@ -8,7 +8,7 @@ import { NetworkService } from '../utilities/network.service';
 
 @WebSocketGateway({
     cors: { origin: '*' },
-    path: '/interfaces/v1/mcdu',
+    path: '/interfaces/mcdu',
 })
 export class McduGateway implements OnGatewayInit, OnGatewayConnection {
     constructor(
